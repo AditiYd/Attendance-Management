@@ -1,0 +1,20 @@
+<form (submit)="addNewData($event)" class = "form">
+
+    <div class = "div1">
+        <label for="importId" class = "importId">Student ID:</label>
+        <input type="text" id="importId" name="importId" [(ngModel)]="newData.importId" class = "textbox" required>
+    </div>
+
+    <div class = "div1">
+        <label for="Date" class = "importId">Date:</label>
+        <input type="date" id="Date" name="Date" [(ngModel)]="newData.Date" class = "textbox" required>
+    </div>
+
+    <div class = "div1">
+        <label for="Status" class = "importId">Status:</label>
+        <input type="text" id="Status" name="Status" [(ngModel)]="newData.Status" class = "textbox" required>
+    </div>
+
+    <button type="submit" class = "btn">Add attendance</button>
+
+</form>

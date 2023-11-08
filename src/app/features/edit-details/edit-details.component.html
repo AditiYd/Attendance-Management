@@ -1,0 +1,27 @@
+<form (ngSubmit)="onSubmit()" class = "form">
+    <div class = "div1">
+        <label class = "importId">
+            ID:
+            <input type="text" [(ngModel)]="id" name="id" class = "textbox">
+          </label>
+    </div>
+    <div class = "div1">
+        <label class = "importId">
+            Name:
+            <input type="text" [(ngModel)]="name" name="name" class = "textbox">
+        </label>
+    </div>
+    <div class = "div1">
+        <label class = "importId">
+            Email:
+            <input type="email" [(ngModel)]="email" name="email" class = "textbox">
+        </label>
+    </div>
+    <div class = "div1">
+        <label class = "importId">
+            Phone:
+            <input type="tel" [(ngModel)]="phone" name="phone" class = "textbox">
+        </label>
+    </div>
+    <button type="submit" class = "btn">Update Student</button>
+</form>
